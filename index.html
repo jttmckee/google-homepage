@@ -6,19 +6,26 @@
   .search-button {
     font-family: sans-serif;
     font-size: 16px;
-    background-color: #d6d6d6;
+    background-color: #e8e8e8;
     color: #5a5252;
     -webkit-appearance:none;
     border-color:white;
     border-style: solid;
+    padding: 5px;
 
   }
   .search-button:hover {
     color: black;
-    border-width: 2px;
-    border-style: outset;
-    border-color: buttonface;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
     border-image: initial;
+  }
+  .micText {
+    background-image:url("images/Google_mic.svg.png");
+    background-position:right;
+    background-repeat: no-repeat;
+    background-size: 25px 25px
   }
   </style>
 </head>
@@ -30,7 +37,8 @@
     <form>
       <div style="padding:10px;position:relative;left:-50px">
         <input type = "text" name="searchString"
-        style="width:500px;height:20px"> <BR>
+        style="width:500px;height:30px"
+        class="micText"> <BR>
       </div>
       <input type = "submit" name="search" value ="Search"
       style="width:80px;"
