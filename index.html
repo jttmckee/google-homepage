@@ -4,14 +4,16 @@
   <title> Google </title>
   <style>
   .search-button {
-    font-family: sans-serif;
-    font-size: 16px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
     background-color: #e8e8e8;
     color: #5a5252;
     -webkit-appearance:none;
     border-color:white;
     border-style: solid;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 2px;
 
   }
   .search-button:hover {
@@ -22,29 +24,41 @@
     border-image: initial;
   }
   .micText {
-    background-image:url("images/Google_mic.svg.png");
-    background-position:right;
-    background-repeat: no-repeat;
-    background-size: 25px 25px
+
+    position: relative;
+    left: 500px;
+    top: -34px;
+    height: 23px;
+    width: 11px;
+
   }
+
+  .textInput {
+    border-style:outset;
+    width:500px;
+    height:30px;
+    padding:10px;
+  }
+
   </style>
 </head>
 <body>
-  <div style="position:relative;left:350px; top: 200px">
+  <div style=" width: 60%; position:relative; left: 100px; margin: 150px auto">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2000px-Google_2015_logo.svg.png"
-    style="width:400px;height:100px">
+    style="width:300px;height:100px">
 
     <form>
-      <div style="padding:10px;position:relative;left:-50px">
+      <div style="padding:10px;position:relative;left:-100px;margin:5px">
         <input type = "text" name="searchString"
-        style="width:500px;height:30px"
-        class="micText"> <BR>
+
+        class=" textInput"> <BR>
+          <img src="images/Google_mic.svg.png" class="micText" >
       </div>
-      <input type = "submit" name="search" value ="Search"
-      style="width:80px;"
+      <input type = "submit" name="search" value ="Google Search"
+
       class="search-button">
       <input type = "submit" name="lucky" value = "I'm feeling lucky"
-      style="margin-left:120px"
+      style="margin-left:20px"
       class="search-button">
     </form>
   </div>
