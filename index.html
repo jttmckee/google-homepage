@@ -37,10 +37,13 @@
 
   .textInput {
     border-style:outset;
-    border-width:thin;
+    border-width:1px;
     width:500px;
     height:30px;
     padding:10px;
+    outline-style: none;
+
+    box-shadow: 0px 1px 1px #c5c5c5;
   }
 
   .textInput:focus, .textInput:hover {
@@ -54,17 +57,42 @@
     display:inline
   }
   .icon {
-    height:20px;
-    width:20px;
+    height:25px;
+    width:25px;
     position: relative;
-    top: 4px;
+    top: 5px;
+  }
+
+  .apps {
+    background: url("images/google apps lighter.png") no-repeat;
+    background-color: white;
+    background-size: contain;
+    border: none;
+  }
+  .apps:hover, .apps:focus, .apps:active  {
+    background: url("images/google apps.png") no-repeat;
+    background-size: contain;
+
+
   }
 
   header nav {
     position: absolute;
     right: 20px;
-    top: 15px;
+    top: -5px;
     padding-left: 500px;
+  }
+  header nav a:visited, header nav a {
+    color: #2F2F2F;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 5px;
+    text-decoration: none;
+
+
+  }
+  header nav a:hover, header nav a:focus, header nav a:visited{
+    text-decoration: underline;
   }
 
   </style>
@@ -75,7 +103,7 @@
     <ul>
       <li><a href="https://www.gmail.com">Gmail</a></li>
       <li><a href="https://www.google.com/imghp">Images</a></li>
-      <li><img src="images/google apps.png" class="icon" ></li>
+      <li><button type="button" class="icon apps"></li>
     </ul>
   </nav>
 </header>
