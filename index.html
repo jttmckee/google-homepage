@@ -43,6 +43,7 @@
     padding:10px;
     outline-style: none;
 
+
     box-shadow: 0px 1px 1px #c5c5c5;
   }
 
@@ -82,17 +83,44 @@
     top: -5px;
     padding-left: 500px;
   }
-  header nav a:visited, header nav a {
-    color: #2F2F2F;
+   nav a:visited,  nav a {
+    color: #3F3F3F;
     font-family: arial, sans-serif;
-    font-size: 14px;
-    margin: 5px;
+    font-size: 13px;
+    margin: 8px;
     text-decoration: none;
 
 
   }
-  header nav a:hover, header nav a:focus, header nav a:visited{
+   nav a:hover,  nav a:focus,  nav a:visited {
     text-decoration: underline;
+  }
+
+  footer {
+    display:block;
+    background-color:#eeeeee;
+    padding: 10px;
+    width:100%;
+
+  }
+  footer nav {
+    width: 100%;
+
+  }
+  footer ul {
+    display:inline;
+  }
+  footer ul:nth-child(2) {
+    /*
+    margin-left:auto;
+    margin-right: 0;
+    */
+    float:right;
+    position:relative;
+    top:-18px;
+  }
+  footer ul:nth-child(2) li {
+
   }
 
   </style>
@@ -127,5 +155,21 @@
       class="search-button">
     </form>
   </div>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#"> Advertising </a> </li>
+        <li><a href="#"> Business </a> </li>
+        <li><a href="#"> About </a> </li>
+
+      </ul>
+      <ul>
+        <li><a href="#"> Privacy </a> </li>
+        <li><a href="#"> Terms </a> </li>
+        <li><a href="#"> Settings </a> </li>
+      </ul>
+    </nav>
+  </footer>
 
 </html>
